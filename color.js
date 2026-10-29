@@ -1,3 +1,12 @@
 const delay = ms => new Promise(res => setTimeout(res,ms));
+console.log("hiii")
 
-document.body.style.backgroundColor="lightblue";
+async function GMSC (){
+    while (true){
+        document.body.style.backgroundColor="black";
+        await delay(500)    
+        document.body.style.backgroundColor="red";
+        await delay(500)
+    }
+}
+GMSC()
