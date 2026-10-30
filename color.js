@@ -11,4 +11,4 @@ async function GMSC (){
         await delay(500)
     }
 }
-GMSC()
+GMSC
