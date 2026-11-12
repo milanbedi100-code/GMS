@@ -3,10 +3,11 @@ console.log("hiii")
 
 async function GMSC (){
     while (true){
-        document.body.style.backgroundColor="red";
-        await delay(500)
-        document.body.style.backgroundColor="green";
-        await delay(500)
+        for(let i = 0; i <= 100; i++){
+            document.body.style.backgroundColor=`color-mix(in srgb,green ${i}%, #ea1c1c)`;
+            await delay(50)
+        }
+        
     }
 }
 GMSC()
